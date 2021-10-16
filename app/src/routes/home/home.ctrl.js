@@ -1,8 +1,8 @@
 "use strict"
 
 const users = {
-  id: ["woorimIT", "나개발", "김팀장" ],
-  password: ["1234", "12345", "123456"]
+  id: ["woorimIT", "dlduswn87", "김팀장" ],
+  password: ["1234", "11111", "123456"]
 }
 
 const output = {
