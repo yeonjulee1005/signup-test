@@ -16,26 +16,40 @@
         <form action="https://httpbin.org/post" method="POST" class="form login">
     
           <div class="form-field">
-            <label for="login-id"><svg class="icon">
+            <label for="register-id"><svg class="icon">
                 <use xlink:href="#icon-user"></use>
               </svg><span class="hidden">아이디</span></label>
-            <input autocomplete="id" id="login-id" type="text" name="id" class="form-input" placeholder="아이디" required>
+            <input autocomplete="id" id="register-id" type="text" name="id" class="form-input" placeholder="아이디" required>
+          </div>
+
+          <div class="form-field">
+            <label for="register-username"><svg class="icon">
+                <use xlink:href="#icon-user"></use>
+              </svg><span class="hidden">이름</span></label>
+            <input autocomplete="username" id="register-username" type="text" name="username" class="form-input" placeholder="이름" required>
           </div>
     
           <div class="form-field">
-            <label for="login-password"><svg class="icon">
+            <label for="register-password"><svg class="icon">
                 <use xlink:href="#icon-lock"></use>
-              </svg><span class="hidden">패스워드</span></label>
-            <input id="login-password" type="password" name="password" class="form-input" placeholder="비밀번호" required>
+              </svg><span class="hidden">비밀번호</span></label>
+            <input id="register-password" type="password" name="password" class="form-input" placeholder="비밀번호" required>
+          </div>
+
+          <div class="form-field">
+            <label for="register-confirm-password"><svg class="icon">
+                <use xlink:href="#icon-lock"></use>
+              </svg><span class="hidden">비밀번호 확인</span></label>
+            <input id="register-confirm-password" type="password" name="password" class="form-input" placeholder="비밀번호 확인" required>
           </div>
     
-          <div class="form-ield">
-            <input id="submit" type="submit" value="Sign In">
+          <div class="form-field">
+            <input id="submit" type="submit" value="Sign Up">
           </div>
     
         </form>
     
-        <p class="text--center">Not a member? <a href="/register">Sign up now</a> <svg class="icon">
+        <p class="text--center">가입을 하셨나요? <a href="/login">로그인 페이지로 돌아가기</a> <svg class="icon">
             <use xlink:href="#icon-arrow-right"></use>
           </svg></p>
     

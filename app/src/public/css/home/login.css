@@ -132,11 +132,11 @@ input[type="submit"] {
   inline-size: 100%;
 }
 
-.form__field {
+.form-field {
   display: flex;
 }
 
-.form__input {
+.form-input {
   flex: 1;
 }
 
