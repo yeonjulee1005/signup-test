@@ -7,11 +7,14 @@ class User {
     this.body = body;
   }
 
-  login() {
+  async login() {
     const client = this.body;
 
-    // this.body를 가져와서 client의 id 값(클라이언트가 입력한 id 값)을 UserStorage에 getUserInfo메소드로 전달함 (받아올 때는 id와 password 만 받아옴 더 받아오고 싶은 키값을 { } 안에 추가하면 됨)  
-    const { id, password } = UserStorage.getUserInfo(client.id);
+    // this.body를 가져와서 client의 id 값(클라이언트가 입력한 id 값)을 UserStorage에 getUserInfo메소드로 전달함
+    // (받아올 때는 id와 password 만 받아옴 더 받아오고 싶은 키값을 { } 안에 추가하면 됨)  
+    // fs (file system) 은 promiss 이기 때문 데이터를 전부 읽어 오지 않을 때 실행하게 되므로
+    // 동기 처리인 async await 적으로 처리해야 함.
+    const { id , password} = await UserStorage.getUserInfo(client.id);
 
     // id와 password 검증!
     if (id) {
