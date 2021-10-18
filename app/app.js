@@ -4,6 +4,11 @@
 const express = require("express");
 const app = express();
 
+// 환경변수 config() 메소드를 통해서 동작함
+// 어떠한 os 환경이더라도 동일한 변수를 가져올 수 있도록 하기위함!
+const dotenv = require("dotenv");
+dotenv.config();
+
 // 라우팅
 const home = require("./src/routes/home")
 
